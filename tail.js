@@ -12,4 +12,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-assertEqual(tail([5,6,7]), [6,7]);
+const result = tail(["Hello", "Lighthouse", "Labs"]);
+assertEqual(result.length, 2); 
+assertEqual(result[0], "Lighthouse"); 
+assertEqual(result[1], "Labs"); 
