@@ -43,4 +43,4 @@ const words = ["hello", "world", "lighthouse"];
 
 let result = without(words, ["lighthouse"]);
 
-assertArraysEqual(result, ["hello", "world", "lighthouse"]);
+assertArraysEqual(result, ["hello", "world"]);
