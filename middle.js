@@ -28,7 +28,7 @@ function middle(array) {
   if (array.length % 2 === 0) {
     return [array[i - 1], array[i]];
   } else {
-    return array[i];
+    return [array[i]];
   }
 }
 
