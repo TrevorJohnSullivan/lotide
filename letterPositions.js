@@ -26,12 +26,10 @@ function letterPositions(str) {
     if (str[i] === " ") {
       continue;
     }
-    if (obj[str[i]]) {
-      obj[str[i]].push(i);
-    } else {
+    if (!obj[str[i]]) {
       obj[str[i]] = [];
-      obj[str[i]].push(i);
     }
+    obj[str[i]].push(i);
   }
 
   return obj;
