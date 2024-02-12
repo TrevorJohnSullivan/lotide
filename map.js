@@ -31,8 +31,8 @@ const map = function(array, callback) {
 }
 
 
-const actualResults = map(words, (item) => {
-  return item.toUpperCase()
+const actualResults = map(words, (word) => {
+  return word.toUpperCase()
 })
 
 

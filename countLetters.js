@@ -1,23 +1,40 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
+const assertArraysEqual = function (actual, expected) {
+  if (eqArrays(actual, expected)) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
     console.log(`🛑🛑🛑 Assertion Failed:  ${actual} !== ${expected}`);
   }
 };
 
-const countLetters = function (sent) {
-  let finObj = {};
-  for (let i of sent) {
-    if (i === " ") {
-      continue;
-    } if (finObj[i]) {
-      finObj[i]++;
-    } else {
-      finObj[i] = 1;
+const eqArrays = function (arr1, arr2) {
+  if (arr1.length === arr2.length) {
+    for (let i = 0; i < arr1.length; i++) {
+      if (arr1[i] !== arr2[i]) {
+        return false;
+      }
     }
+    return true;
+  } else {
+    return false;
   }
-  return finObj;
 };
 
-console.log(countLetters("LHL is Life"));
+function stringToArrayObject(str) {
+  const obj = {};
+
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === " ") {
+      continue;
+    }
+    if (obj[str[i]]) {
+      obj[str[i]].push(i);
+    } else {
+      obj[str[i]] = [];
+      obj[str[i]].push(i);
+    }
+  }
+
+  return obj;
+}
+
+assertArraysEqual(letterPositions("hello").e, [1]);
