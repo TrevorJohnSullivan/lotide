@@ -19,7 +19,7 @@ const eqArrays = function (arr1, arr2) {
   }
 };
 
-function letterPositions(str) {
+const letterPositions = function (str) {
   const obj = {};
 
   for (let i = 0; i < str.length; i++) {
@@ -35,5 +35,7 @@ function letterPositions(str) {
   return obj;
 }
 
-assertArraysEqual(letterPositions("hello").e, [1]);
-console.log(letterPositions("lighthouse in the house"))
+// assertArraysEqual(letterPositions("hello").e, [1]);
+// console.log(letterPositions("lighthouse in the house"))
+
+module.exports = letterPositions;

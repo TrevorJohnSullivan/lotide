@@ -21,8 +21,8 @@ const eqArrays = function (arr1, arr2) {
 
 
 
-const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
-const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
+// const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
+// const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
 
 const takeUntil = function (array, callback) {
   const results = [];
@@ -35,10 +35,12 @@ const takeUntil = function (array, callback) {
   return results;
 };
 
-const actualResults2 = takeUntil(data1, (x) => x < 0);
-const actualResults = takeUntil(data2, (x) => x === ",");
+// const actualResults2 = takeUntil(data1, (x) => x < 0);
+// const actualResults = takeUntil(data2, (x) => x === ",");
 
-const expectedResults2 = [ 1, 2, 5, 7, 2 ]
-const expectedResults = [ 'I\'ve', 'been', 'to', 'Hollywood' ]
+// const expectedResults2 = [ 1, 2, 5, 7, 2 ]
+// const expectedResults = [ 'I\'ve', 'been', 'to', 'Hollywood' ]
 
-assertArraysEqual(actualResults, expectedResults)
+// assertArraysEqual(actualResults, expectedResults)
+
+module.exports = takeUntil;

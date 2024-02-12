@@ -39,8 +39,10 @@ const assertArraysEqual = function (actual, expected) {
 
 
 
-const words = ["hello", "world", "lighthouse"];
+// const words = ["hello", "world", "lighthouse"];
 
-let result = without(words, ["lighthouse"]);
+// let result = without(words, ["lighthouse"]);
 
-assertArraysEqual(result, ["hello", "world"]);
+// assertArraysEqual(result, ["hello", "world"]);
+
+module.exports = without;

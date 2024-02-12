@@ -25,7 +25,9 @@ const findKey = function (object, callback) {
   }
 };
 
-const result = findKey(data, (x) => x.stars === 3);
-const expected = "Akaleri";
+// const result = findKey(data, (x) => x.stars === 3);
+// const expected = "Akaleri";
 
-assertEqual(result, expected);
+// assertEqual(result, expected);
+
+module.exports = findKey;
