@@ -19,7 +19,7 @@ const eqArrays = function (arr1, arr2) {
   }
 };
 
-function stringToArrayObject(str) {
+const countLetters = function (str) {
   const obj = {};
 
   for (let i = 0; i < str.length; i++) {
@@ -37,4 +37,8 @@ function stringToArrayObject(str) {
   return obj;
 }
 
-assertArraysEqual(letterPositions("hello").e, [1]);
+// console.log(countLetters("hello"))
+
+// assertArraysEqual(countLetters("hello").e, [1]);
+
+module.exports = countLetters; 
