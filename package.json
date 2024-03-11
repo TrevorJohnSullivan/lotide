@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@trevorjohnsullivan/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "this is a copy of lodash created for educational purposes by a lighthouse labs student",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/TrevorJohnSullivan/lotide.git"
   },
-  "author": "",
+  "author": "trevorjohnsullivanlotide",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TrevorJohnSullivan/lotide/issues"
